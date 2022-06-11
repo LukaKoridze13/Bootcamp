@@ -2,27 +2,27 @@ let container = document.querySelector('.row')
 let data = [
     {
         topic: `შესავალი Web Developement-ში, \n  HTML ელემენტები`,
-        files: [{ "name": "დიზაინი", "file": "https://we.tl/t-G1lBnXHzoN" }]
+        files: [{ "name": "დიზაინი", "file": "./Files/დღე 1.xd" }]
     },
     {
         topic: "HTML Forms, CSS Basics, \n CSS Display (Block,Inline,Inline-Block,None)",
         files: [
-            { "name": "სავარჯიშო 1", "file": "https://we.tl/t-zQFQxcpNTU" },
-            { "name": "სავარჯიშო 2", "file": "https://we.tl/t-WgZyzukM1r" },
-            { "name": "დიზაინი", "file": "https://we.tl/t-0OJf1mBpJu" },
-            { "name": "დიზაინი 2", "file": "https://we.tl/t-EEVIIoP9qi" }
+            { "name": "სავარჯიშო 1", "file": "./Files/დღე 2 სავარჯიშო.docx" },
+            { "name": "სავარჯიშო 2", "file": "./Files/დღე 2 სავარჯიშო 2.docx" },
+            { "name": "დიზაინი", "file": "./Files/დღე 2.xd" },
+            { "name": "დიზაინი 2", "file": "./Files/დღე 2 ვარ.2.xd" }
         ]
     },
     {
         topic: "CSS Box Model, CSS Positions",
-        files: [{ "name": "დიზაინი", "file": "https://we.tl/t-U5Ji14lkW4" }]
+        files: [{ "name": "დიზაინი", "file": "./Files/დღე 3.xd" }]
     },
     {
         topic: "CSS Animations, Importing Fonts, \n Reset CSS",
         files: [
-            { "name": "სავარჯიშო 1", "file": "https://we.tl/t-iTmXaTM43B" },
-            { "name": "სავარჯიშო 2", "file": "https://we.tl/t-RE9zUpRCPW" },
-            { "name": "დიზაინი 1", "file": "https://we.tl/t-ao5BPI5lyP" }],
+            { "name": "სავარჯიშო 1", "file": "./Files/დღე 4 სავარჯიშო.docx" },
+            { "name": "სავარჯიშო 2", "file": "./Files/დღე 4 Animations.docx" },
+            { "name": "დიზაინი ", "file": "./Files/დღე 4.xd" }],
         links: [{ name: 'Reset CSS', link: 'https://justpaste.it/1kkdx' },
         { name: 'Animations ( W3School)', link: 'https://www.w3schools.com/css/css3_animations.asp' },
             { name: 'Google Fonts', link: 'https://fonts.google.com/' },
@@ -74,16 +74,22 @@ data.slice(0).reverse().map((item, index) => {
         davaleba.style.fontFamily = "BPG QuadroSquare Mtavruli"
         wrapper.appendChild(davaleba)
 
-        let link = document.createElement('a')
-        link.setAttribute('href', `${item.file}`)
-        link.setAttribute('target', `_blank`)
-        wrapper.appendChild(link)
+        // let link = document.createElement('a')
+        // link.setAttribute('href', `${item.file}`)
+        // link.setAttribute('target', `_blank`)
+        // wrapper.appendChild(link)
+
+        let form = document.createElement('form')
+        form.setAttribute('method', 'get')
+        form.setAttribute('action', item.file)
+        wrapper.appendChild(form)
+        form.style.width = 'fit-content'
 
         let button = document.createElement('button')
         button.style.fontSize = '12px'
         button.classList.add('btn-warning')
         button.innerHTML = 'Download'
-        link.appendChild(button)
+        form.appendChild(button)
 
     })
     if (item.links !== undefined && item.links !== null) {
