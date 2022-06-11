@@ -1,0 +1,40 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-quadrosquare-mtavruli/css/bpg-quadrosquare-mtavruli.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+/* font-family: 'Kdam Thmor Pro'
+font-family: "BPG QuadroSquare Mtavruli" */
+.wrap {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: bisque;
+}
+
+header {
+    width: 100%;
+    max-width: 1920px;
+    background-color: rgb(55, 6, 169);
+    text-align: center;
+    font-family: 'Kdam Thmor Pro';
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 187, 0);
+}
+
+.col-3-md {
+    border-radius: 30px;
+    background-color: rgb(55, 6, 169);
+    color: white;
+    height: fit-content;
+}
+
+.btn-warning {
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    font-family: "Kdam Thmor Pro";
+}
