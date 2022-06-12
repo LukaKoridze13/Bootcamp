@@ -23,7 +23,7 @@ let data = [
             { "name": "სავარჯიშო 1", "file": "./Files/დღე 4 სავარჯიშო.docx" },
             { "name": "სავარჯიშო 2", "file": "./Files/დღე 4 Animations.docx" },
             { "name": "დიზაინი ", "file": "./Files/დღე 4.xd" }],
-        links: [{ name: 'Reset CSS', link: 'https://justpaste.it/1kkdx' },
+        links: [{ name: 'Reset CSS', link: 'https://justpaste.it/6y9vz' },
         { name: 'Animations ( W3School)', link: 'https://www.w3schools.com/css/css3_animations.asp' },
             { name: 'Google Fonts', link: 'https://fonts.google.com/' },
             { name: 'Georgian Fonts', link: 'https://web-fonts.ge/' },
