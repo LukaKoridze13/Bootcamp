@@ -2,7 +2,8 @@ let container = document.querySelector('.row')
 let data = [
     {
         topic: `შესავალი Web Developement-ში, \n  HTML ელემენტები`,
-        files: [{ "name": "დიზაინი", "file": "./Files/დღე 1.xd" }]
+        files: [{ "name": "დიზაინი", "file": "./Files/დღე 1.xd" }],
+        links: [{name:'HTML Elements', link:'https://www.w3schools.com/html/html_elements.asp'}]
     },
     {
         topic: "HTML Forms, CSS Basics, \n CSS Display (Block,Inline,Inline-Block,None)",
@@ -11,11 +12,19 @@ let data = [
             { "name": "სავარჯიშო 2", "file": "./Files/დღე 2 სავარჯიშო 2.docx" },
             { "name": "დიზაინი", "file": "./Files/დღე 2.xd" },
             { "name": "დიზაინი 2", "file": "./Files/დღე 2 ვარ.2.xd" }
+        ],
+        links: [
+            {name:'Forms', link:'https://www.w3schools.com/html/html_forms.asp'},
+            {name: 'CSS Selectors', link: 'https://www.w3schools.com/cssref/css_selectors.asp'},
         ]
     },
     {
         topic: "CSS Box Model, CSS Positions",
-        files: [{ "name": "დიზაინი", "file": "./Files/დღე 3.xd" }]
+        files: [{ "name": "დიზაინი", "file": "./Files/დღე 3.xd" }],
+        links: [
+            {name: 'CSS Box Model', link: 'https://www.w3schools.com/css/css_boxmodel.asp'},
+            {name: 'CSS Positions', link: 'https://www.w3schools.com/css/css_positioning.asp'},
+    ]
     },
     {
         topic: "CSS Animations, Importing Fonts, \n Reset CSS",
@@ -32,7 +41,12 @@ let data = [
     },
     {
         topic: "GitHub, CSS Display Flex",
-        files: [{ "name": "დიზაინი", "file": "./Files/დღე 5.xd" }]
+        files: [{ "name": "დიზაინი", "file": "./Files/დღე 5.xd" }],
+        links: [
+            { name: 'GitHub', link: 'https://github.com/' },
+            { name: 'GitHub Desktop', link: 'https://desktop.github.com/' },
+            { name: 'Display Flex (W3School)', link: 'https://www.w3schools.com/css/css3_flexbox.asp' },
+        ]
     },
 ]
 data.slice(0).reverse().map((item, index) => {
