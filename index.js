@@ -25,11 +25,15 @@ let data = [
             { "name": "დიზაინი ", "file": "./Files/დღე 4.xd" }],
         links: [{ name: 'Reset CSS', link: 'https://justpaste.it/6y9vz' },
         { name: 'Animations ( W3School)', link: 'https://www.w3schools.com/css/css3_animations.asp' },
-            { name: 'Google Fonts', link: 'https://fonts.google.com/' },
-            { name: 'Georgian Fonts', link: 'https://web-fonts.ge/' },
-            { name: 'Transfonter', link: 'https://transfonter.org/' }
+        { name: 'Google Fonts', link: 'https://fonts.google.com/' },
+        { name: 'Georgian Fonts', link: 'https://web-fonts.ge/' },
+        { name: 'Transfonter', link: 'https://transfonter.org/' }
         ]
-    }
+    },
+    {
+        topic: "GitHub, CSS Display Flex",
+        files: [{ "name": "დიზაინი", "file": "./Files/დღე 5.xd" }]
+    },
 ]
 data.slice(0).reverse().map((item, index) => {
     // Card
@@ -41,7 +45,7 @@ data.slice(0).reverse().map((item, index) => {
     container.appendChild(card)
     // Day
     let day = document.createElement('h2')
-    day.innerText = `დღე ${data.length-index}`
+    day.innerText = `დღე ${data.length - index}`
     day.style.fontWeight = 'bold'
     day.style.fontFamily = "BPG QuadroSquare Mtavruli"
     card.appendChild(day)
@@ -106,7 +110,7 @@ data.slice(0).reverse().map((item, index) => {
             card.appendChild(tag)
             tag.style.textDecoration = 'none'
             tag.style.fontFamily = "Kdam Thmor Pro",
-            tag.style.color = 'white'
+                tag.style.color = 'white'
             tag.style.display = 'block'
 
         })
