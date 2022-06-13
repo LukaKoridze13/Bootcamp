@@ -76,7 +76,8 @@ h1 {
   height: fit-content;
 }
 
-.btn-warning, .btn-primary {
+.btn-warning,
+.btn-primary {
   border-radius: 30px;
   padding: 10px;
   border: none;
@@ -96,7 +97,8 @@ h1 {
   border-radius: 30px;
 }
 
-.programaPage, .damatebitiPage {
+.programaPage,
+.damatebitiPage {
   min-height: calc(100vh - 126px);
 }
 
