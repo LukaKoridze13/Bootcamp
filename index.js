@@ -131,3 +131,20 @@ data.slice(0).reverse().map((item, index) => {
 
     }
 })
+let programa= document.querySelector('.programa')
+let damatebiti = document.querySelector('.damatebiti')
+let programaPage=document.querySelector('.programaPage')
+let damatebitiPage=document.querySelector('.damatebitiPage')
+programa.classList.add('active')
+programa.addEventListener('click', function(){
+    programa.classList.add('active')
+    damatebiti.classList.remove('active')
+    programaPage.style.display = 'flex'
+    damatebitiPage.style.display = 'none'
+})
+damatebiti.addEventListener('click', function(){
+    programa.classList.remove('active')
+    damatebiti.classList.add('active')
+     programaPage.style.display = 'none'
+    damatebitiPage.style.display = 'flex'
+})

@@ -1,0 +1,108 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-quadrosquare-mtavruli/css/bpg-quadrosquare-mtavruli.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+/* font-family: 'Kdam Thmor Pro'
+font-family: "BPG QuadroSquare Mtavruli" */
+
+@mixin eng{
+    font-family: 'Kdam Thmor Pro'
+}
+@mixin geo{
+    font-family:"BPG QuadroSquare Mtavruli" ;
+}
+$blue:  rgb(55, 6, 169);
+$yellow: rgb(255, 187, 0);
+.wrap {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: bisque;
+}
+
+header {
+    width: 100%;
+    max-width: 1920px;
+    background-color:$blue;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li {
+    color: $yellow ;
+    @include geo;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+}
+
+nav {
+    width: fit-content;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 187, 0);
+    @include eng;
+    width: fit-content;
+}
+
+.col-3-md {
+    border-radius: 30px;
+    background-color: rgb(55, 6, 169);
+    color: white;
+    height: fit-content;
+}
+
+.btn-warning, .btn-primary {
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    @include eng;
+}
+.btn-primary{
+    background-color: $yellow;
+    color: $blue;
+    margin-left: 30px;
+}
+.active {
+    background-color:$yellow !important;
+    padding: 10px !important;
+    color: $blue !important;
+    border-radius: 30px;
+}
+.programaPage, .damatebitiPage {
+    min-height: calc(100vh - 126px);
+}
+.item {
+    width: fit-content;
+    height: fit-content;
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: $blue;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    @include geo;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.damatebitiPage {
+    padding: 100px;
+}
