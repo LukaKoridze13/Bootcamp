@@ -3,7 +3,7 @@ let data = [
     {
         topic: `შესავალი Web Developement-ში, \n  HTML ელემენტები`,
         files: [{ "name": "დიზაინი", "file": "./Files/დღე 1.xd" }],
-        links: [{name:'HTML Elements', link:'https://www.w3schools.com/html/html_elements.asp'}]
+        links: [{ name: 'HTML Elements', link: 'https://www.w3schools.com/html/html_elements.asp' }]
     },
     {
         topic: "HTML Forms, CSS Basics, \n CSS Display (Block,Inline,Inline-Block,None)",
@@ -14,17 +14,17 @@ let data = [
             { "name": "დიზაინი 2", "file": "./Files/დღე 2 ვარ.2.xd" }
         ],
         links: [
-            {name:'Forms', link:'https://www.w3schools.com/html/html_forms.asp'},
-            {name: 'CSS Selectors', link: 'https://www.w3schools.com/cssref/css_selectors.asp'},
+            { name: 'Forms', link: 'https://www.w3schools.com/html/html_forms.asp' },
+            { name: 'CSS Selectors', link: 'https://www.w3schools.com/cssref/css_selectors.asp' },
         ]
     },
     {
         topic: "CSS Box Model, CSS Positions",
         files: [{ "name": "დიზაინი", "file": "./Files/დღე 3.xd" }],
         links: [
-            {name: 'CSS Box Model', link: 'https://www.w3schools.com/css/css_boxmodel.asp'},
-            {name: 'CSS Positions', link: 'https://www.w3schools.com/css/css_positioning.asp'},
-    ]
+            { name: 'CSS Box Model', link: 'https://www.w3schools.com/css/css_boxmodel.asp' },
+            { name: 'CSS Positions', link: 'https://www.w3schools.com/css/css_positioning.asp' },
+        ]
     },
     {
         topic: "CSS Animations, Importing Fonts, \n Reset CSS",
@@ -46,6 +46,13 @@ let data = [
             { name: 'GitHub', link: 'https://github.com/' },
             { name: 'GitHub Desktop', link: 'https://desktop.github.com/' },
             { name: 'Display Flex (W3School)', link: 'https://www.w3schools.com/css/css3_flexbox.asp' },
+        ]
+    },
+    {
+        topic: "CSS Grid",
+        files: [{ "name": "დიზაინი", "file": "./Files/დღე 6 GRID.xd" }],
+        links: [
+            { name: 'CSS Grid (W3School)', link: 'https://www.w3schools.com/css/css_grid.asp' },
         ]
     },
 ]
@@ -131,20 +138,20 @@ data.slice(0).reverse().map((item, index) => {
 
     }
 })
-let programa= document.querySelector('.programa')
+let programa = document.querySelector('.programa')
 let damatebiti = document.querySelector('.damatebiti')
-let programaPage=document.querySelector('.programaPage')
-let damatebitiPage=document.querySelector('.damatebitiPage')
+let programaPage = document.querySelector('.programaPage')
+let damatebitiPage = document.querySelector('.damatebitiPage')
 programa.classList.add('active')
-programa.addEventListener('click', function(){
+programa.addEventListener('click', function () {
     programa.classList.add('active')
     damatebiti.classList.remove('active')
     programaPage.style.display = 'flex'
     damatebitiPage.style.display = 'none'
 })
-damatebiti.addEventListener('click', function(){
+damatebiti.addEventListener('click', function () {
     programa.classList.remove('active')
     damatebiti.classList.add('active')
-     programaPage.style.display = 'none'
+    programaPage.style.display = 'none'
     damatebitiPage.style.display = 'flex'
 })
