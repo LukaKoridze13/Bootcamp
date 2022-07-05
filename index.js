@@ -11,7 +11,8 @@ let data = [
             { "name": "სავარჯიშო 1", "file": "./Files/დღე 2 სავარჯიშო.docx" },
             { "name": "სავარჯიშო 2", "file": "./Files/დღე 2 სავარჯიშო 2.docx" },
             { "name": "დიზაინი", "file": "./Files/დღე 2.xd" },
-            { "name": "დიზაინი 2", "file": "./Files/დღე 2 ვარ.2.xd" }
+            { "name": "დიზაინი 2", "file": "./Files/დღე 2 ვარ.2.xd" },
+            { "name": "დიზაინი 3","file": "./Files/დღე 2 ვარ 3.xd"}
         ],
         links: [
             { name: 'Forms', link: 'https://www.w3schools.com/html/html_forms.asp' },
