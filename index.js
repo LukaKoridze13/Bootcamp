@@ -21,7 +21,7 @@ let data = [
     },
     {
         topic: "CSS Box Model, CSS Positions",
-        files: [{ "name": "დიზაინი", "file": "./Files/დღე 3.xd" }],
+        files: [{ "name": "დიზაინი", "file": "./Files/დღე 3.xd" },{"name": 'დიზაინი 2', "file": "./Files/დღე 3 ვარ2.xd"}],
         links: [
             { name: 'CSS Box Model', link: 'https://www.w3schools.com/css/css_boxmodel.asp' },
             { name: 'CSS Positions', link: 'https://www.w3schools.com/css/css_positioning.asp' },
