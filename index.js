@@ -42,7 +42,7 @@ let data = [
     },
     {
         topic: "GitHub, CSS Display Flex",
-        files: [{ "name": "დიზაინი", "file": "./Files/დღე 5.xd" }],
+        files: [{ "name": "დიზაინი", "file": "./Files/დღე 5.xd" },{ "name": "დიზაინი2", "file": "./Files/დღე 5 ვარ2.xd" }],
         links: [
             { name: 'GitHub', link: 'https://github.com/' },
             { name: 'GitHub Desktop', link: 'https://desktop.github.com/' },
